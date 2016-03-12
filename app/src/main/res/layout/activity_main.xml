@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"   	
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+               android:focusable="true"
+    			android:focusableInTouchMode="true"
+             >
+  
+      
+         
+          
+      <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="@drawable/nlogin">
+     
+       <RelativeLayout android:layout_width="fill_parent" android:layout_height="580px" android:id="@+id/rrfix">
+           <RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent"   android:id="@+id/rr_login" android:focusable="true"
+    			android:focusableInTouchMode="true">
+    			
+            <!--   <TextView android:layout_width="wrap_content" android:text="Password" android:textColor="#000000"  android:id="@+id/txt_password" android:textSize="12dip" android:layout_height="wrap_content" android:layout_below="@+id/fm" android:layout_alignLeft="@+id/fmforpassword"></TextView> -->
+        <!-- <TextView android:layout_width="wrap_content" android:text="EmailId" android:textColor="#000000"  android:id="@+id/txt_username" android:textSize="12dip" android:layout_height="wrap_content" android:layout_alignLeft="@+id/fm" android:layout_marginTop="100px"></TextView> -->
+        
+            <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fm" android:layout_marginLeft="35px" android:layout_marginRight="35px"  android:layout_marginTop="150px">
+
+            <EditText
+                 android:id="@+id/edt_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp" android:singleLine="true"
+                android:background="@drawable/nedittextforlogin" 
+                android:hint="Email" android:padding="5dp"
+                android:paddingRight="10dp"
+                	android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                 >
+              
+            </EditText>
+
+               <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5px"
+                android:background="@drawable/vuser" />
+        </FrameLayout>
+            
+            
+            
+            
+   
+           
+            <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fmforpassword" android:layout_marginLeft="35px" android:layout_marginRight="35px" android:layout_marginTop="50px"
+             android:layout_below="@id/fm" >
+
+            <EditText
+                   android:id="@+id/edt_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                	android:imeOptions="actionDone"
+                android:password="true" android:padding="5dp"
+               android:hint="Contraseña" android:singleLine="true"
+                 android:background="@drawable/nedittextforlogin"
+                android:drawablePadding="8dp"
+                android:paddingRight="10dp"
+                 >
+                
+            </EditText>
+
+               <Button  
+                android:id="@+id/delete12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+              android:layout_marginRight="10px"
+                android:background="@drawable/vpass" />
+        </FrameLayout>
+           
+    
+        
+       
+       <Button 
+      android:layout_width="wrap_content" 
+      android:text="ENTRAR" android:clickable="true" android:background="@drawable/login_button"
+      android:layout_height="wrap_content" android:textColor="#F8F8F8"  android:textStyle="bold"
+      android:textSize="16dip"  android:layout_below="@+id/fmforpassword" android:layout_marginTop="50px"
+       android:id="@+id/submit" android:layout_marginLeft="40px"
+      android:layout_alignParentRight="true" android:layout_marginRight="35px"  ></Button>
+        
+      
+        
+      </RelativeLayout>
+      
+     
+        
+       </RelativeLayout>
+        
+   <!--   <ProgressBar android:layout_height="80dp" android:layout_width="80dp" android:background="@drawable/my_progress_indeterminate" android:layout_below="@id/rrfix" android:layout_centerHorizontal="true"/> -->
+       
+     
+</LinearLayout>
+</LinearLayout>
